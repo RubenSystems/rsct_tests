@@ -21,7 +21,7 @@ async fn main() -> std::io::Result<()> {
     
     Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Aliquet lectus proin nibh nisl condimentum id venenatis a. Eu volutpat odio facilisis mauris sit amet massa vitae. Vel turpis nunc eget lorem dolor sed viverra ipsum nunc. Dignissim convallis aenean et tortor at. At volutpat diam ut venenatis. Platea dictumst quisque sagittis purus sit amet volutpat. Enim blandit volutpat maecenas volutpat blandit. Lorem ipsum dolor sit amet consectetur adipiscing elit duis tristique. Quisque id diam vel quam elementum pulvinar etiam non quam. Sed libero enim sed faucibus turpis in eu mi bibendum. Feugiat scelerisque varius morbi enim nunc faucibus. Eget nunc scelerisque viverra mauris. In nisl nisi scelerisque eu.";
 
-    transmit(string as *const u8, string.len(), socket, destination).await;
+    transmit(string as *const u8, string.len(), &socket, &destination).await;
 
 
 	Ok(())
