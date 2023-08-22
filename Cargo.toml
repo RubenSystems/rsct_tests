@@ -1,0 +1,18 @@
+[package]
+name = "rsct_tests"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "recieve"
+path = "src/recieve.rs"
+
+[[bin]]
+name = "transmit"
+path = "src/transmit.rs"
+
+[dependencies]
+rsct = { path = "../rsct" }
+tokio = {version = "1.32.0", features=["net", "rt", "macros", "rt-multi-thread"]}
